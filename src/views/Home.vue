@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>CHAAAAAAANge</h1>
     <HomeHeader/>
     <HomeMain/>
   </div>
