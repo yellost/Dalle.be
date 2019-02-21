@@ -1,6 +1,31 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+   <template>
+       <div>
+        <Header/>
+        <AdminListItem/>
+  
+
+        <Footer/>
+    </div>
+   </template>
+   
+   <script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import AdminListItem from '@/components/AdminListItem.vue'
+
+
+export default {
+name: 'AdminList',
+  components: {
+    Header,
+    AdminListItem,
+    Footer
+  }
+
+}
+   </script>
+   
+   <style>
+   
+   </style>
+   
