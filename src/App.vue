@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="jesaispas">
 
-    <p>YAAAAAAAAAARGH!!!!!!!</p>
+    <p>BOUMMMMMMMMMMMMM!!!!!!!</p>
       <router-link to="/home">Home</router-link> |
       <router-link to="/resto">Resto</router-link> |
       <router-link to="/admin">Admin</router-link>
