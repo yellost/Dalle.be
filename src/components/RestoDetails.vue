@@ -24,7 +24,7 @@
 
 
 export default {
-  name: "Resto"
+  name: "RestoDetails"
   
 };
 </script>
