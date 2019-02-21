@@ -1,6 +1,26 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    <div>
+<MenuForm/>
+<MenuList/>
+    </div>
+</template>
+
+<script>
+
+import MenuForm from "@/components/MenuForm.vue";
+import MenuList from "@/components/MenuList.vue";
+
+
+
+export default {
+ name: "MenuEdit",
+  components: {
+    MenuForm,
+    MenuList
+  }
+}
+</script>
+
+<style>
+
+</style>

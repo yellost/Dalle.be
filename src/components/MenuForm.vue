@@ -1,6 +1,13 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    
+</template>
+
+<script>
+export default {
+name: "MenuForm",
+}
+</script>
+
+<style>
+
+</style>
