@@ -1,9 +1,8 @@
 <template>
   <div>
-    <h1>CHAAAAAAANge</h1>
-    <HomeHeader/>
-    <HomeMain/>
-  <Footer/>
+    <Header/>
+    <RestoList/>
+    <Footer/>
   </div>
 
 
@@ -11,15 +10,28 @@
 
 <script>
 // @ is an alias to /src
-import HomeHeader from '@/components/HomeHeader.vue'
-import HomeMain from '@/components/HomeMain.vue'
-import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue';
+import RestoList from '@/components/RestoList.vue';
+import Footer from '@/components/Footer.vue';
+
+import axios from 'axios';
 
 export default {
+  data(){
+      return {
+          RestoList: []
+      }
+  },
+  created(){
+      axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurants")
+      .then(response => {
+          this.RestoList = response.data;
+      })
+  },
   name: 'Home',
   components: {
-    HomeHeader,
-    HomeMain,
+    Header,
+    RestoList,
     Footer
   }
 }

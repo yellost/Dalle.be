@@ -1,18 +1,18 @@
 <template>
-       <footer>
+<footer>
         <div class="logoFoot">
             <img src="~@/assets/img/logo.png" alt="">
         </div>
         <p>info@dalle.be</p>
-    </footer>
+</footer>
 </template>
 
 <script>
-export default {
+// @ is an alias to /src
 
+export default {
+  name: 'HomeHeader',
+  components: {
+  }
 }
 </script>
-
-<style>
-
-</style>

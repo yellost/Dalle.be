@@ -1,6 +1,9 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    <img src="~@/assets/img/logo2.png" alt="" class="logo">
+</template>
+
+<script>
+export default {
+
+}
+</script>

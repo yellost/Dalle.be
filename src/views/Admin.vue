@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header/>
+    <Header/>
     <AdminMain/>
-    <footer/>
+    <Footer/>
   </div>
 </template>
 

@@ -1,6 +1,12 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    <div class="boutons">
+        <h3 class="user">Admin</h3>
+        <button type="submit" form="form1" value="Submit">Log out</button>
+    </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
