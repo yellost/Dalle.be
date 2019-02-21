@@ -1,6 +1,25 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    <div>
+        <Header/>
+        <Footer/>
+    </div>
+
+</template>
+
+<script>
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+name: 'AdminNav',
+  components: {
+    Header,
+    Footer,
+  }
+
+}
+</script>
+
+<style>
+
+</style>
