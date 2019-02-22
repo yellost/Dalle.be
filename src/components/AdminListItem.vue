@@ -1,6 +1,6 @@
       <template>
        <div>
-        <Header/>
+        
         
         <div class="restaurant-list">
             <div class="container">
@@ -233,13 +233,13 @@
    </template>
    
    <script>
-import Header from '@/components/Header.vue'
+
 import Footer from '@/components/Footer.vue'
 
 export default {
 name: 'AdminListItem',
   components: {
-    Header,
+    
     Footer
   }
 
