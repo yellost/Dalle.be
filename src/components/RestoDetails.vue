@@ -3,18 +3,17 @@
   <article>
     <div class="restoInfo">
       <div class="imgPlat">
-        <button type="submit" form="form1" value="Submit" class="btnMenu">Menu</button>
         <img src="img/table4.jpg" alt="#">
       </div>
       <div class="infoResto">
-        <h3>Resto Blabla</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h3>{{resto.Name}}</h3>
+        <p>{{resto.Description}}</p>
       </div>
     </div>
     <div class="contactResto">
-      <p>Adress: Rue bla bla, 95</p>
-      <p>Tel: 4569/8965/856</p>
-      <p>Mail: blabla@bla.com</p>
+      <p>{{resto.Adresse.Street}},  {{resto.Adresse.Number}}</p>
+      <p>{{resto.Adresse.Zipcode}} - {{resto.Adresse.City}}</p>
+      <p>{{resto.Telephone}}</p>
     </div>
   </article>
   
@@ -22,9 +21,20 @@
 
 <script>
 
+import axios from 'axios';
 
 export default {
+  data(){
+      return {
+          resto: {}
+      }
+  },
+  created(){
+      axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurantById/"+this.$route.params.id)
+      .then(response => {
+          this.resto = response.data;
+      })
+  },
   name: "RestoDetails"
-  
-};
+}
 </script>

@@ -5,8 +5,9 @@
             <img src="~@/assets/img/steak.gif" alt="">
         </div>
         <div class="info">
-            <h3>{{resto.Name}}</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, ab. </p>
+            <router-link :to="'/Resto/' + resto.RestaurantID"><h3>{{resto.Name}}</h3></router-link>
+            
+            <p>{{resto.Description}}</p>
         </div>
     </div>
 </template>

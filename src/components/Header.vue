@@ -1,8 +1,12 @@
 <template>
 <header>
+  <div>
       <LogoLarge/>
+      
+    
       <ButtonsMain/>
       <SearchBar/>
+  </div>
   <div>
       <LogoSmall/>
       <ButtonsAdmin/>
