@@ -2,7 +2,9 @@
 
     <div>
 <Header/>
+<div class="container">
 <MenuListItem/>
+</div>
     </div>
 </template>
 
@@ -13,6 +15,7 @@ import MenuListItem from "@/components/MenuForm.vue";
 export default {
 name: "MenuList",
   components: {
+      Header,
     MenuListItem
   }
 }

@@ -1,6 +1,29 @@
-   <footer>
-        <div class="logoFoot">
-            <img src="~@/assets/img/logo.png" alt="">
-        </div>
-        <p>info@dalle.be</p>
-    </footer>
+<template>
+    <div>
+        <div class="restaurant-data">
+                    <p class="restaurant-name">Resto 1</p>
+                    <p class="restaurant-type">Cuisine</p>
+                    <p class="dishPrice">code postal</p>
+                    <img src="img/chair-cutlery-diner-941861.jpg" alt="#" class="dishImg">
+                    <button class="menu">Menu</button>
+                    <div class="editMode">
+                    <i class="far fa-edit"></i>
+                    <i class="far fa-trash-alt"></i>
+                    </div>
+    </div>
+</template>
+
+<script>
+import Header from "@/components/Header.vue";
+export default {
+name: "MenuEdit",
+components:{
+Header
+}
+  
+}
+</script>
+
+<style>
+
+</style>

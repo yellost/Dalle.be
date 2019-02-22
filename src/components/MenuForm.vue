@@ -224,9 +224,13 @@
 import Header from "@/components/Header.vue";
 export default {
 name: "MenuForm",
+components: {
+      Header
+      }
 }
 </script>
 
 <style>
+@import './assets/css/style.min.css';
 
 </style>
