@@ -3,7 +3,7 @@
   <article>
     <div class="restoInfo">
       <div class="imgPlat">
-        <img src="img/table4.jpg" alt="#">
+        <img :src="resto.Menu[2].Picture" alt="#">
       </div>
       <div class="infoResto">
         <h3>{{resto.Name}}</h3>
@@ -26,13 +26,15 @@ import axios from 'axios';
 export default {
   data(){
       return {
-          resto: {}
+          resto: {},
+          menuList:[]
       }
   },
   created(){
       axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurantById/"+this.$route.params.id)
       .then(response => {
           this.resto = response.data;
+          this.menuList = this.resto.Menu;
       })
   },
   name: "RestoDetails"

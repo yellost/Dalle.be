@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header/>
+    <Header Page="Home"/>
     <RestoList :restoList="RestoList"/>
     <Footer/>
   </div>

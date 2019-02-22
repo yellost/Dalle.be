@@ -2,8 +2,6 @@
 <header>
   <div>
       <LogoLarge/>
-      
-    
       <ButtonsMain/>
       <SearchBar/>
   </div>
@@ -30,6 +28,6 @@ export default {
     ButtonsMain,
     LogoSmall,
     ButtonsAdmin
-  }
+  },
 }
 </script>
