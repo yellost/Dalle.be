@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="pagecenter">
         <RestoEntry  v-for="(resto,index) in restoList" :key='index' :resto="resto"/>
     </div>
 </template>
@@ -16,3 +16,13 @@ export default {
   props: ["restoList"]
 }
 </script>
+
+
+<style>
+
+.pageCenter{
+    display: flex;
+    justify-content: center;
+}
+
+</style>

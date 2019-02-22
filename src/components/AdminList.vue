@@ -1,7 +1,6 @@
    <template>
-       <div class="">
+       <div>
         <AdminListItem/>
-        
     </div>
    </template>
    
@@ -14,11 +13,8 @@ import AdminListItem from '@/components/AdminListItem.vue'
 export default {
 name: 'AdminList',
   components: {
-   
     AdminListItem
-   
   }
-
 }
    </script>
    

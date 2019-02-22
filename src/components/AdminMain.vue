@@ -1,5 +1,5 @@
 <template>
-    <div class="recenter">
+    <div>
         
         <AdminNav/>
         <AdminList/>
@@ -16,7 +16,6 @@ import AdminList from '@/components/AdminList.vue'
 export default {
 name: 'AdminMain',
   components: {
-    
     AdminNav,
     AdminList
   }
