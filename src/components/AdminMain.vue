@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="recenter">
         
         <AdminNav/>
         <AdminList/>
@@ -25,5 +25,6 @@ name: 'AdminMain',
 </script>
 
 <style>
+
 
 </style>

@@ -1,13 +1,13 @@
    <template>
-       <div>
+       <div class="">
         <AdminListItem/>
-        <Footer/>
+        
     </div>
    </template>
    
    <script>
 
-import Footer from '@/components/Footer.vue'
+
 import AdminListItem from '@/components/AdminListItem.vue'
 
 
@@ -15,14 +15,14 @@ export default {
 name: 'AdminList',
   components: {
    
-    AdminListItem,
-    Footer
+    AdminListItem
+   
   }
 
 }
    </script>
    
    <style>
-   
+    
    </style>
    
