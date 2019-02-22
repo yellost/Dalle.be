@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header/>
-    <RestoList/>
+    <RestoList :restoList="RestoList"/>
     <Footer/>
   </div>
 
@@ -26,6 +26,10 @@ export default {
       axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurants")
       .then(response => {
           this.RestoList = response.data;
+      /* eslint-disable no-console */
+      console.log(this.RestoList);
+      /* eslint-enable no-console */
+          
       })
   },
   name: 'Home',
