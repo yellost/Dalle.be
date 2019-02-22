@@ -4,26 +4,19 @@
                     <p class="restaurant-name">Resto 1</p>
                     <p class="restaurant-type">Cuisine</p>
                     <p class="dishPrice">code postal</p>
-                    <img src="img/chair-cutlery-diner-941861.jpg" alt="#" class="dishImg">
+                    <img src="img/chair-cutlery-diner-941861.jpg" alt="#" class="dishImg"/>
                     <button class="menu">Menu</button>
                     <div class="editMode">
                     <i class="far fa-edit"></i>
                     <i class="far fa-trash-alt"></i>
                     </div>
     </div>
+    </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 export default {
-name: "MenuEdit",
-components:{
-Header
-}
+name: "MenuListItem"
   
 }
 </script>
-
-<style>
-
-</style>

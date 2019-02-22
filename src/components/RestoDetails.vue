@@ -15,6 +15,7 @@
       <p>{{resto.Adresse.Zipcode}} - {{resto.Adresse.City}}</p>
       <p>{{resto.Telephone}}</p>
     </div>
+    <MenuListItem v-for="(menuItem, index) in menuList" :key="index"/>
   </article>
   
 </template>
@@ -22,6 +23,7 @@
 <script>
 
 import axios from 'axios';
+import MenuListItem from '@/components/MenuListItem.vue';
 
 export default {
   data(){
@@ -31,11 +33,14 @@ export default {
       }
   },
   created(){
-      axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurantById/"+this.$route.params.id)
+      axios.get("//bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurantById/"+this.$route.params.id)
       .then(response => {
           this.resto = response.data;
           this.menuList = this.resto.Menu;
       })
+  },
+  components: {
+    MenuListItem
   },
   name: "RestoDetails"
 }

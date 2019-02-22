@@ -23,7 +23,7 @@ export default {
       }
   },
   created(){
-      axios.get("http://bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurants")
+      axios.get("//bd-restaurant.azurewebsites.net/api/Restaurants/GetRestaurants")
       .then(response => {
           this.RestoList = response.data;
       })
